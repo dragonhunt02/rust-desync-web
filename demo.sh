@@ -4,8 +4,6 @@ set -e
 # Demo size
 SIZE_GB=1
 
-bash build.sh
-
 rm -r demo/ 2>/dev/null || true
 
 mkdir -p demo
