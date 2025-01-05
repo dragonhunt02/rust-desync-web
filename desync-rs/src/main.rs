@@ -24,7 +24,6 @@ mod assembler;
 mod seed;
 
 extern crate log;
-extern crate log4rs;
 extern crate clap;
 extern crate hyper;
 extern crate url;
@@ -38,7 +37,6 @@ use log::{info};
 use clap::ArgMatches;
 
 fn main() {
-    log4rs::init_file("log4rs.yml", Default::default()).unwrap();
 
     let mut matches = ArgMatches::new();
     utils::get_matches_from_cli(&mut matches);
