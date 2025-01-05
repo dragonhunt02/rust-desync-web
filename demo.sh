@@ -6,7 +6,7 @@ SIZE_GB=1
 
 bash build.sh
 
-rm -r demo/
+rm -r demo/ || true
 
 mkdir -p demo
 cd demo
